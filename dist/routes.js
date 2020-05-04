@@ -8,6 +8,7 @@ var helloWorld = function (request, response) {
     var user = CreateUser_1.default({
         email: "email@email.com",
         password: "123456789990",
+        techs: ["nodeJS", "React Native"],
     });
     return response.json(user);
 };
