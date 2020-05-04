@@ -5,7 +5,7 @@ const helloWorld = (request: Request, response: Response) => {
   const user = CreateUser({
     email: "email@email.com",
     password: "123456789990",
-    techs: ["nodeJS", "React Native"],
+    techs: ["nodeJS", "React Native", { title: "Javascript", experience: 100 }],
   });
   return response.json(user);
 };

@@ -1,9 +1,14 @@
+interface TechObject {
+  title: String;
+  experience: Number;
+}
+
 // Aqui setamos os tipos das variáveis.
 interface CreateUserData {
   name?: String; // exclamação significa que name não é obrigatório mas tem seu valor setado com uma string vazia.
   email: String;
   password: String;
-  techs: Array<String>;
+  techs: Array<String | TechObject>;
 }
 
 const CreateUser = ({ name = "", email, password, techs }: CreateUserData) => {
